@@ -14,7 +14,7 @@ var dmPassword = process.env.PASSWORD || "DMsRAwesome1!";
 var basic = auth.basic({
         realm: "Dungeon Revealer DM Login"
     }, function (username, password, callback) { // Custom authentication method.
-        callback(username === "dm1996" && password === dmPassword);
+        callback(username === "dm" && password === dmPassword);
     }
 );
 
