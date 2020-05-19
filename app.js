@@ -10,11 +10,11 @@ var fs = require('fs');
 var auth = require('http-auth');
 var busboy = require('connect-busboy');
 
-var dmPassword = process.env.PASSWORD || "pass";
+var dmPassword = process.env.PASSWORD || "DMsRAwesome1!";
 var basic = auth.basic({
         realm: "Dungeon Revealer DM Login"
     }, function (username, password, callback) { // Custom authentication method.
-        callback(username === "dm" && password === dmPassword);
+        callback(username === "dm1996" && password === dmPassword);
     }
 );
 
