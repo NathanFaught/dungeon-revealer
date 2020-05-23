@@ -71,6 +71,11 @@ app.get('/', function (req, res) {
       res.redirect('/dm');
     }
 });
+
+app.get('/player', function (req, res) {
+    res.render('player');
+});
+
 app.get('/dm', auth.connect(basic), function (req, res) {
     res.render('dm', {dm: true, title: 'Dungeon Revealer DM Console'});
 });
